@@ -1,0 +1,84 @@
+/* Estilos adicionales para la página HTML */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para el encabezado (header) */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la sección de publicidad */
+  .advertising {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    flex-basis: 30%;
+    margin-left: 20px;
+  }
+  
+  .advertising h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el contenido principal */
+  .content {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 20px;
+    flex-basis: calc(70% - 20px); /* Restamos el margen izquierdo de la publicidad */
+  }
+  
+  /* Estilos para el pie de página (footer) */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .advertising,
+    .content {
+      flex-basis: 100%;
+      margin-left: 0; /* Eliminamos el margen izquierdo en dispositivos móviles */
+    }
+  }
